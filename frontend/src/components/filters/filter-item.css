@@ -1,0 +1,63 @@
+/* Shared filter item styles — imported by filter components */
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px var(--space-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  user-select: none;
+}
+
+.filter-item:hover {
+  background: var(--color-surface-3);
+}
+
+.filter-item.active {
+  background: rgba(124, 107, 255, 0.08);
+}
+
+.filter-checkbox {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.filter-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--color-text);
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filter-item.active .filter-name {
+  color: #a89eff;
+  font-weight: 500;
+}
+
+.filter-count {
+  font-size: 11px;
+  color: var(--color-text-faint);
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+.show-more {
+  width: 100%;
+  padding: var(--space-2);
+  font-size: 12px;
+  color: var(--color-primary);
+  text-align: left;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+}
+
+.show-more:hover {
+  background: rgba(124, 107, 255, 0.08);
+}
